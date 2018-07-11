@@ -38,7 +38,7 @@
 ### 3)큐(Queue)
 
 #### - [큐(Queue)](./1_DataStructure/3_Queue/Queue.md "Queue")
-- FIFO(First In, First Out) 선입 후출. 먼저 데이터를 넣은것이 먼저 삭제됨
+- FIFO(First In, First Out) 선입 선출. 먼저 데이터를 넣은것이 먼저 삭제됨
 - Enqueue로 데이터 추가
 - Dequeue으로 데이터 삭제
 
