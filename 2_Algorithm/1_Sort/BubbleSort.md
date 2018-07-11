@@ -1,1 +1,1 @@
-# [SwiftAlgorithm](./../ "목차")
+# [SwiftAlgorithm](./../../../ "목차")
