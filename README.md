@@ -1,6 +1,7 @@
 # [SwiftAlgorithm](https://github.com/pikachu987/SwiftAlgorithm "List")
 
 ## 1. 자료구조(DataStruct)
+
 ### 1)리스트(List)
 
 #### - [연결리스트(LinkedList)](./1_DataStructure/1_List/LinkedList.md "LinkedList")
@@ -23,16 +24,29 @@
 #### - [환형연결리스트(CircularLinkedList)](./1_DataStructure/1_List/CircularLinkedList.md "CircularLinkedList")
 - 공부중
 
+
 ### 2)스택(Stack)
+
 #### - [스택(Stack)](./1_DataStructure/2_Stack/Stack.md "Stack")
--
+- FILO(First In, Last Out) 선입 후출. 먼저 데이터를 넣은것이 나중에 삭제됨
+- Push로 데이터 추가
+- Pop으로 데이터 삭제
+
+#### - [스택계산기(StackCalculator)](./1_DataStructure/2_Stack/StackCalculator.md "StackCalculator")
+- 공부중
 
 ### 3)큐(Queue)
-#### - [큐(Queue)](./1_DataStructure/2_Queue/Queue.md "Queue")
--
 
+#### - [큐(Queue)](./1_DataStructure/3_Queue/Queue.md "Queue")
+- FIFO(First In, First Out) 선입 후출. 먼저 데이터를 넣은것이 먼저 삭제됨
+- Enqueue로 데이터 추가
+- Dequeue으로 데이터 삭제
+
+#### - [순환큐(CircularQueue)](./1_DataStructure/3_Queue/CircularQueue.md "CircularQueue")
+- 공부중
 
 ## 2. 알고리즘(Algorithm)
+
 ### 1)정렬(Sort)
 
 #### - [버블정렬(BubbleSort)](./2_Algorithm/1_Sort/BubbleSort.md "BubbleSort")

@@ -2,7 +2,7 @@
 
 ### 큐(Queue)
 
-#### [링크드리스트(LinkedList)](../1_List/LinkedList.md "LinkedList")
+##### [연결리스트(LinkedList)](../1_List/LinkedList.md "LinkedList")
 
 ```swift
 import UIKit
