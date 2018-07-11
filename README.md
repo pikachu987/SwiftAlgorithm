@@ -1,6 +1,17 @@
 # [SwiftAlgorithm](https://github.com/pikachu987/SwiftAlgorithm "List")
 
 ## 1. 자료구조(DataStruct)
+### 1)리스트(List)
+
+#### - [연결리스트(LinkedList)](./1_DataStructure/1_List/LinkedList.md "LinkedList")
+- 노드와 노드가 연결되어 있다
+- 노드의 포인트가 다음 노드와 연결을 담당하게 된다
+> 배열과 연결리스트 비교
+-|배열|연결리스트|
+접근속도|O(1)|O(n)|
+추가,삭제속도(가장 앞)|-|O(1)|
+추가,삭제속도(가장 끝)|-|O(n)|
+추가,삭제속도(중간)|-|O(n)|
 
 ## 2. 알고리즘(Algorithm)
 ### 1)정렬(Sort)
