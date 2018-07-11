@@ -52,7 +52,7 @@ class LinkedList<E> {
             self.head = value
             if self.tail == nil { self.tail = self.head }
         }else {
-            guard let node = self.object(at: at) else { return }
+            guard let node = self.object(at) else { return }
             value.next = node.next
             node.next = value
             if value.next == nil { self.tail = value }
@@ -60,28 +60,35 @@ class LinkedList<E> {
         self._count += 1
     }
 
-    func removeFirst() {
-        self.remove(at: 0)
+    @discardableResult
+    func removeFirst() -> Node<E>? {
+        return self.remove(0)
     }
 
-    func removeLast() {
-        self.remove(at: self.count-1)
+    @discardableResult
+    func removeLast() -> Node<E>? {
+        return self.remove(self.count-1)
     }
 
-    func remove(at: Int) {
-        if at > self.count-1 { return }
+    @discardableResult
+    func remove(_ at: Int) -> Node<E>? {
+        if at > self.count-1 { return nil }
+        var node: Node<E>?
         if at == 0 {
+            node = self.head
             self.head = self.first?.next
             if self.head == nil { self.tail = nil }
         } else {
-            var node = self.head
+            var element = self.head
             for _ in 0..<at-1 {
-                node = node?.next
+                element = element?.next
             }
-            node?.next = node?.next?.next
-            if at == self.count-1 { self.tail = node }
+            node = element?.next
+            element?.next = element?.next?.next
+            if at == self.count-1 { self.tail = element }
         }
         if self.count != 0 { self._count -= 1 }
+        return node
     }
 
     func removeAll() {
@@ -90,7 +97,7 @@ class LinkedList<E> {
         self._count = 0
     }
 
-    func object(at: Int) -> Node<E>? {
+    func object(_ at: Int) -> Node<E>? {
         var node = self.head
         for _ in 0..<at {
             node = node?.next

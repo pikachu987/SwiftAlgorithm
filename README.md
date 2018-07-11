@@ -17,9 +17,19 @@
 추가,삭제속도(중간)|-|O(n)
 
 #### - [이중연결리스트(DoubleLinkedList)](./1_DataStructure/1_List/DoubleLinkedList.md "DoubleLinkedList")
-- 노드와 노드가 연결되어 있다
 - 노드가 이전노드와 다음노드로 구성되어 있다
 - 노드가 양방향으로 연결되어 있어서 양쪽으로 탐색 가능하다
+
+#### - [환형연결리스트(CircularLinkedList)](./1_DataStructure/1_List/CircularLinkedList.md "CircularLinkedList")
+- 공부중
+
+### 2)스택(Stack)
+#### - [스택(Stack)](./1_DataStructure/2_Stack/Stack.md "Stack")
+-
+
+### 3)큐(Queue)
+#### - [큐(Queue)](./1_DataStructure/2_Queue/Queue.md "Queue")
+-
 
 
 ## 2. 알고리즘(Algorithm)
