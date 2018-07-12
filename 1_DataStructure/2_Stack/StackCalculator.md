@@ -4,6 +4,8 @@
 
 #### [연결리스트(LinkedList)](../1_List/LinkedList.md "LinkedList")
 
+중위표기법, 후위표기법
+
 ```swift
 import UIKit
 

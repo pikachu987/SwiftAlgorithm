@@ -22,7 +22,7 @@
 - 노드가 양방향으로 연결되어 있어서 양쪽으로 탐색 가능하다
 
 #### - [환형연결리스트(CircularLinkedList)](./1_DataStructure/1_List/CircularLinkedList.md "CircularLinkedList")
-- 공부중
+- 노드가 환형으로 구성되어 있다
 
 
 ### 2)스택(Stack)
