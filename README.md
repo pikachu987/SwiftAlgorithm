@@ -45,6 +45,26 @@
 #### - [순환큐(CircularQueue)](./1_DataStructure/3_Queue/CircularQueue.md "CircularQueue")
 - 공부중
 
+### 4)트리(Tree)
+
+- 노드(Node): 트리의 구성요소 하나하
+- 루트(Root): 유일한 시작노드
+- 서브트리(Sub-Tree): 각 노드를 기준으로 그 노드가 루트가 되는 트리
+- 단말노드(Terminal Node, Leaf Node): 자식이 없는 노드
+- 중간노드(Branch Node): 적어도 하나의 자식을 가지는 노드
+- 부모노드(Parent Node): 바로 위에 있는 노드
+- 형제노드(Sibling Node): 같은 계층에 있는 노드
+- 자식노드(Child Node): 바로 아래에 있는 노드
+- 레벨(Level): 루트노드와 현재 노드를 연결하는 선의 수
+- 높이(Height): 트리 최대 레벨 가장 아래의 노드 레벨
+- 깊이(Depth): 루트에서 어떤 노드까지의 경로의 개수
+- 차수(Degree): 노드의 자식 개수
+
+#### - [트리(Tree)](./1_DataStructure/4_Tree/Tree.md "Tree")
+- 왼쪽 자식 / 오른쪽 형제
+
+#### - [이진트리(BinaryTree)](./1_DataStructure/4_Tree/BinaryTree.md "BinaryTree")
+
 ## 2. 알고리즘(Algorithm)
 
 ### 1)정렬(Sort)
