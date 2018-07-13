@@ -1,5 +1,7 @@
 # [SwiftAlgorithm](https://github.com/pikachu987/SwiftAlgorithm "List")
 
+<p><a href="https://developer.apple.com/swift/" rel="nofollow"><img src="https://camo.githubusercontent.com/e8776637816bc5433442e706034a9de47daca0c0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53776966742d342e302d6f72616e67652e7376673f7374796c653d666c6174" alt="Swift 4.0" data-canonical-src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat" style="max-width:100%;"></a></p>
+
 ## 1. 자료구조(DataStruct)
 
 ### 1)리스트(List)
@@ -102,3 +104,7 @@
 - 공간복잡도는 O(n)
 
 ### 2)검색(Search)
+
+#### - [순차검색(SequentialSearch)](./2_Algorithm/2_Search/SequentialSearch.md "SequentialSearch")
+- 순차적으로 비교해서 검색
+- 시간복잡도 O(n)
