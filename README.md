@@ -37,7 +37,13 @@
 - Pop으로 데이터 삭제
 
 #### - [스택계산기(StackCalculator)](./1_DataStructure/2_Stack/StackCalculator.md "StackCalculator")
-- 공부중
+- 중위 표기법: 우리가 아는 수식 (2 + 1) * 2 * (3 + 5)
+- 후위 표기법: 컴퓨터가 계산하기 쉬운 수식 31+2+35+*
+- 연산자 우선순위
+- 1. * , /
+- 2. + , -
+- 3. ( )
+- 숫자는 list에 담고 연산자는 stack에 담는다.
 
 ### 3)큐(Queue)
 
@@ -47,7 +53,16 @@
 - Dequeue으로 데이터 삭제
 
 #### - [순환큐(CircularQueue)](./1_DataStructure/3_Queue/CircularQueue.md "CircularQueue")
-- 공부중
+- 선형큐를 구현하면 enqueue와 dequeue가 되면서 front가 점차 뒤로가게 된다.
+- 메모리공간을 다 쓰면 다시 앞의 메모리공간에 enqueue, dequeue할수 있는 원형큐가 필요하다.
+- 전단은 front, 후단은 rear로 표현
+- full은 전단과 후단중 후단이 더 클때 후단+1 - 전단이 array사이즈와 같으면 풀 (+1 해주는거는 더미데이터)
+- full은 전단과 후단중 전단이 더 클때 후단+1 이 전단과 같으면 풀
+- enqueue를 했을때 풀이 아니면 rear을 증가시키고 real인덱스에 추가
+- enqueue를 했을때 풀이 아니고 rear이 array의 사이즈-1이 되면 rear을 0으로 만들고 rear인덱스에 추가
+- empty는 전단과 후단이 같을때
+- dequeue를 했을때 empty가 아니고 전단이 array사이즈-1 이면 전단 0으로 만들고 전단 인덱스 삭제
+- dequeue를 했을때 empty가 아니고 전단이 array사이즈-1 가 아니면 전단 증가하고 전단 인덱스 삭제
 
 ### 4)트리(Tree)
 
