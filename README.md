@@ -120,10 +120,17 @@
 - 요소를 찾으면 요소를 한칸 앞으로 이동
 
 #### - [이진탐색(BinarySearch)](./2_Algorithm/2_Search/BinarySearch.md "BinarySearch")
-- 공부중
+- 데이터 집합의 중앙에 있는 요소를 골라서 비교
+- 요소가 찾는 값보다 크면 중앙을 기준으로 왼쪽에 대해 새로 검색, 작으면 오른쪽
+- 시간복잡도 O(logN)
+- 데이터가 반드시 정렬되어 있어야함
 
 #### - [이진탐색트리(BinarySearchTree)](./2_Algorithm/2_Search/BinarySearchTree.md "BinarySearchTree")
-- 공부중
+- 이진 탐색을 위한 이진 트리
+- 왼쪽 자식 노드는 나보다 작고 오른쪽 자식 노드는 나보다 크다
+- 노드를 삭제할때는 잎노드일때는 자신만 삭제
+- 한쪽만 자식이 있을때는 자식과 교체
+- 양쪽 다 자식이 있을때는 자기보다큰 자식의 최소노드를 구해서 최소노드를 삭제후 자신과 교체
 
-#### - [레드블랙트리(RedBlackTree)](./2_Algorithm/2_Search/RedBlackTree.md "RedBlackTree")
+#### - [레드블랙트리(BinarySearchTree)](./2_Algorithm/2_Search/BinarySearchTree.md "BinarySearchTree")
 - 공부중

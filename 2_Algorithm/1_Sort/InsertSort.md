@@ -7,8 +7,6 @@
 ### 삽입정렬(InsertSort)
 
 ```swift
-import UIKit
-
 func insertSort(_ array: inout [Int]){
     for i in 1..<array.count{
         let key = array[i]

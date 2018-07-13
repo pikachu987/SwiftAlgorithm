@@ -11,7 +11,6 @@
 중위표기법, 후위표기법
 
 ```swift
-import UIKit
 
 
 ```

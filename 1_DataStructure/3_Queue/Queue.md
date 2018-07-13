@@ -9,8 +9,6 @@
 ##### [연결리스트(LinkedList)](../1_List/LinkedList.md "LinkedList")
 
 ```swift
-import UIKit
-
 class Queue<E> {
     private var list = LinkedList<E>()
 

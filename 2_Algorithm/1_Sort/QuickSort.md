@@ -7,8 +7,6 @@
 ### 퀵정렬(QuickSort)
 
 ```swift
-import UIKit
-
 func quickSort(_ array: inout [Int], left: Int, right: Int){
     var left = left
     var right = right

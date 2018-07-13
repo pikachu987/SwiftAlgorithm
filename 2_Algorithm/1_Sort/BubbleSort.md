@@ -7,8 +7,6 @@
 ### 버블정렬(BubbleSort)
 
 ```swift
-import UIKit
-
 func bubbleSort(_ array: inout [Int]){
     for i in 0..<array.count-1{
         for j in 1..<array.count-i{

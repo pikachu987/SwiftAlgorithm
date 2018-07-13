@@ -7,8 +7,6 @@
 ### 선택정렬(SelectSort)
 
 ```swift
-import UIKit
-
 func selectionSort(_ array: inout [Int]){
     for i in 0..<array.count{
         var tmp = i

@@ -7,8 +7,6 @@
 ### 환형연결리스트(CircularLinkedList)
 
 ```swift
-import UIKit
-
 class Node<Int> {
     var value: Int
 

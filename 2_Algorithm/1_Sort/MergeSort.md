@@ -7,8 +7,6 @@
 ### 퀵정렬(QuickSort)
 
 ```swift
-import UIKit
-
 func mergeSort(_ array: inout [Int], left: Int, right: Int){
     if left < right{
         let mid = (left + right) / 2

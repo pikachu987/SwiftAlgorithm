@@ -7,8 +7,6 @@
 ### 이중연결리스트(DoubleLinkedList)
 
 ```swift
-import UIKit
-
 class Node<E> {
     var value: E
 

@@ -7,8 +7,6 @@
 ### 연결리스트(LinkedList)
 
 ```swift
-import UIKit
-
 class Node<E> {
     var value: E
 
