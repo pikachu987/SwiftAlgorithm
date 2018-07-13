@@ -110,3 +110,20 @@
 #### - [순차검색(SequentialSearch)](./2_Algorithm/2_Search/SequentialSearch.md "SequentialSearch")
 - 순차적으로 비교해서 검색
 - 시간복잡도 O(n)
+
+#### - [전진이동법(MoveToFrontMethod)](./2_Algorithm/2_Search/MoveToFrontMethod.md "MoveToFrontMethod")
+- 순차적으로 비교해서 검색
+- 요소를 찾으면 요소를 뽑아 제일 앞으로 이동
+
+#### - [전위법(TransposeMethod)](./2_Algorithm/2_Search/TransposeMethod.md "TransposeMethod")
+- 순차적으로 비교해서 검색
+- 요소를 찾으면 요소를 한칸 앞으로 이동
+
+#### - [이진탐색(BinarySearch)](./2_Algorithm/2_Search/BinarySearch.md "BinarySearch")
+- 공부중
+
+#### - [이진탐색트리(BinarySearchTree)](./2_Algorithm/2_Search/BinarySearchTree.md "BinarySearchTree")
+- 공부중
+
+#### - [레드블랙트리(RedBlackTree)](./2_Algorithm/2_Search/RedBlackTree.md "RedBlackTree")
+- 공부중
