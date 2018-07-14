@@ -156,3 +156,10 @@
 
 #### - [레드블랙트리(BinarySearchTree)](./2_Algorithm/2_Search/BinarySearchTree.md "BinarySearchTree")
 - 공부중
+
+### 3)우선순위 큐와 힙(PriorityQueueHeap)
+
+#### - [우선순위 큐와 힙(PriorityQueueHeap)](./2_Algorithm/3_PriorityQueueHeap/PriorityQueueHeap.md "PriorityQueueHeap")
+- 공부중
+
+### 4)해시 테이블(HashTable)
