@@ -154,12 +154,27 @@
 - 한쪽만 자식이 있을때는 자식과 교체
 - 양쪽 다 자식이 있을때는 자기보다큰 자식의 최소노드를 구해서 최소노드를 삭제후 자신과 교체
 
-#### - [레드블랙트리(BinarySearchTree)](./2_Algorithm/2_Search/BinarySearchTree.md "BinarySearchTree")
-- 공부중
-
 ### 3)우선순위 큐와 힙(PriorityQueueHeap)
 
-#### - [우선순위 큐와 힙(PriorityQueueHeap)](./2_Algorithm/3_PriorityQueueHeap/PriorityQueueHeap.md "PriorityQueueHeap")
-- 공부중
+- FIFO 구조인 큐를 사용한다. 큐와 차이점은 데이터에 우선순위가 있다.
+- 힙은 완전 이진트리의 특징을 가진다.
+- 힙에서 루트는 가장 작은 데이터를 가진다. 자신 노드가 부모 노드보다 커야한다.
+- 힙이 꽉 찾다면 크기조절을 한다.
+- 삽입과 삭제는 시간복잡도 O(log N)
 
 ### 4)해시 테이블(HashTable)
+
+- 해시 테이블은 Key에 Value를 저장하는 데이터 구조이다.
+- 삽입, 삭제, 탐색시 O(1)의 시간복잡도를 가진다.
+- 메모리를 미리 할당하기 때문에 공간 효율적이지 않다.
+- 해시테이블은 근본적인 문제가 있는데 미리 공간을 만들어서 인덱스의 값이 중복이 될수 있다.
+- 이 문제를 collision(충돌) 이라고 하는데 이 문제를 해결하는 방식이 있다.
+
+#### Separate chaining
+- LinkedList를 이용하는 방식인데 동일 index로 충돌이 발생하면 index가 가리키고 있는 Linked List에 노드를 추가해서 값을 추가한다.
+- 데이터를 추출할때는 key에 대한 index를 구한 다음 index가 가리키고 있는 Linked List를 선형 검색한다.
+
+#### Open Addressing
+- 충돌이 났을때 빈공간을 사용하는 방법이다.
+- Linear probing 방식은 index에 충돌이 났을때 index뒤에 있는 곳중 빈 곳을 찾아서 데이터를 넣는 방식이다.
+- Resizing 방식은 더큰 크기의 array를 새로 만들고 새로운 array에 hash를 다시 계산해서 복사해준다.
