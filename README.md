@@ -181,7 +181,7 @@
 
 ### 5)그래프(Graph)
 
-#### - [인접행렬(AdjacencyMatrix)](./2_Algorithm/5_Graph/AdjacencyMatrix.md "AdjacencyMatrix")
+#### - [인접행렬(AdjacencyMatrix)](./2_Algorithm/5_Graph/AdjacencyMatrix.md "AdjacencyMatrix") 
 - 2차원 배열의 특성상 공간복잡도가 O(n2)이므로 메모리 낭비가 문제가 될 수 있다.
 - 대부분의 인접행렬은 시간복잡도도 O(n2)이 된다.
 - 무가중치 행렬에서는 [i]노드에서 [j]노드로 가는 간선이 있으면 1, 없으면 0이다.
