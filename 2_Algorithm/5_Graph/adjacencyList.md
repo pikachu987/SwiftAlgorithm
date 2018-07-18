@@ -4,7 +4,7 @@
 [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/pikachu987/SwiftAlgorithm)
 [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)](https://github.com/pikachu987/SwiftAlgorithm/stargazers)
 
-### 우선순위 큐와 힙(PriorityQueueHeap)
+### 인접리스트(AdjacencyList)
 
 ```swift
 

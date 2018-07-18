@@ -178,3 +178,13 @@
 - 충돌이 났을때 빈공간을 사용하는 방법이다.
 - Linear probing 방식은 index에 충돌이 났을때 index뒤에 있는 곳중 빈 곳을 찾아서 데이터를 넣는 방식이다.
 - Resizing 방식은 더큰 크기의 array를 새로 만들고 새로운 array에 hash를 다시 계산해서 복사해준다.
+
+### 5)그래프(Graph)
+
+#### - [인접행렬(AdjacencyMatrix)](./2_Algorithm/5_Graph/AdjacencyMatrix.md "AdjacencyMatrix")
+- 2차원 배열의 특성상 공간복잡도가 O(n2)이므로 메모리 낭비가 문제가 될 수 있다.
+- 대부분의 인접행렬은 시간복잡도도 O(n2)이 된다.
+- 무가중치 행렬에서는 [i]노드에서 [j]노드로 가는 간선이 있으면 1, 없으면 0이다.
+- 가중치 행렬에서는 [i]노드에서 [j]노드 간선의 가중치를 입력한다.
+
+#### - [인접리스트(AdjacencyList)](./2_Algorithm/5_Graph/AdjacencyList.md "AdjacencyList")
