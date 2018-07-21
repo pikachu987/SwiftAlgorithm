@@ -7,6 +7,9 @@
 ### 인접행렬(AdjacencyMatrix)
 
 
+
+![adjacency](adjacency_1.png)
+
 무가중치 그래프
 
 ```swift
