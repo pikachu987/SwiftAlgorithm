@@ -7,8 +7,7 @@
 ### 인접행렬(AdjacencyMatrix)
 
 
-<img src="adjacency_1.png" width="100px"/>
-![adjacency](adjacency_1.png)
+<img src="adjacency_1.png" width="300px"/>
 
 무가중치 그래프
 
@@ -48,7 +47,7 @@ for i in 0..<nodeCount {
 000100
 ```
 
-
+<img src="adjacency_2.png" width="300px"/>
 
 가중치 그래프
 
