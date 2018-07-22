@@ -13,7 +13,6 @@
 
 ```swift
 let nodeCount = 6 /// 총 노드
-let lineCount = 8 /// 총 간선수
 
 var array = [[Int]].init(repeating: [Int](repeating: 0, count: nodeCount), count: nodeCount)
 
@@ -37,7 +36,7 @@ func dfs(_ i: Int = 0, text: inout String) { /// 재귀함수
   visit[i] = true
   text.append(" \(i) ->")
 
-  for j in 0...nodeCount-1 { /// j부터 끝까지 포문
+  for j in 0...nodeCount-1 {
       if array[i][j] == 1 && visit[j] == false { /// i노드에서 j노드까지 연결이 되어있고 방문을 안했으면 재귀
           dfs(j, text: &text)
       }
