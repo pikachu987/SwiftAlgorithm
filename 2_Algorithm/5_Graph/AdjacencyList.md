@@ -6,9 +6,9 @@
 
 ### 인접리스트(AdjacencyList)
 
-<img src="adjacency_1.png" width="300px"/>
-
 무가중치 그래프
+
+<img src="adjacency_1.png" width="300px"/>
 
 ```swift
 let nodeCount = 6 /// 총 노드
@@ -56,9 +56,10 @@ for (index, element) in array.enumerated() {
 정점 5 에서 3으로 갈수있음
 ```
 
+가중치 그래프
+
 <img src="adjacency_2.png" width="300px"/>
 
-가중치 그래프
 
 ```swift
 let nodeCount = 6 /// 총 노드

@@ -192,3 +192,13 @@
 - 데이터의 순서는 무관
 - 검색을 빨리해서 시간복잡도를 줄이려면 인접리스트를 쓴다.
 - 인접행렬은 인덱스로 접근할수 있어서 작업이 번번하다면 인접행렬을 쓴다.
+
+#### - [깊이우선탐색(DFS:Depth First Search)](./2_Algorithm/5_Graph/DFS.md "DFS")
+- 현재 정점과 인접한 간선들을 하나씩 검사하고 아직 방문하지 않은 정점으로 향하는 간선이 있으면 그 간선을 따라감
+- 더이상 갈곳이 없으면 마지막에 왔던 간선을 따라 뒤로 돌아가면서 탐색
+
+#### - [깊이우선탐색 최단거리(DFS:Depth First Search)](./2_Algorithm/5_Graph/DFSDistance.md "DFS")
+-
+
+
+#### - [너비우선탐색(BFS:Breadth First Search)](./2_Algorithm/5_Graph/BFS.md "BFS")
