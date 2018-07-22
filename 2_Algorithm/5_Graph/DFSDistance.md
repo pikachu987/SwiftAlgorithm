@@ -8,8 +8,6 @@
 
 <img src="adjacency_3.png" width="300px"/>
 
-인접행렬
-
 ```swift
 var array = [
 [1, 1, 1, 1, 1, 1],
