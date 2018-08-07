@@ -222,7 +222,7 @@
 
 ### 7)문자열 검색(String Search)
 
-#### - [전수조사법(BruteForce)](./2_Algorithm/6_StringSearch/BruteForce.md "BruteForce")
+#### - [전수조사법(BruteForce)](./2_Algorithm/7_StringSearch/BruteForce.md "BruteForce")
 - N의 길이를 가진 전체문자열과 M의 길이를 가진 패턴을 비교
 - 시간복잡도는 O(N*M)
 - 비효율적
