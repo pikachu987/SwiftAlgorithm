@@ -208,3 +208,89 @@
 - 같은 깊이를 다 탐색후 다음 깊이를 다 탐색
 
 #### - [너비우선탐색 최단거리(BFS:Breadth First Search)](./2_Algorithm/5_Graph/BFSDistance.md "BFS")
+
+#### - 위상정렬
+
+#### - 최소 신장 트리 - 프림
+
+#### - 최소 신장 트리 - 크루스칼
+
+#### - 최단 경로 탐색 - 다익스트라
+
+#### - 최단 경로 탐색 - 플로이드 워샬
+
+
+### 7)문자열 검색(String Search)
+
+#### - [전수조사법(BruteForce)](./2_Algorithm/6_StringSearch/BruteForce.md "BruteForce")
+- N의 길이를 가진 전체문자열과 M의 길이를 가진 패턴을 비교
+- 시간복잡도는 O(N*M)
+- 비효율적
+
+
+### 8)분할 정복(Divide and Conquer)
+
+
+### 9)동적 계획법(Dynamic Programing)
+
+#### - 부분집합(DP)
+#### - 동전 거스름돈
+#### - 피보나치 수열(DP)
+#### - 배낭(Knapsack)(DP)
+
+
+### 10)탐욕 알고리즘(Greedy)
+
+#### - 허프만 트리
+
+### 11)백트래킹(BackTracking)
+
+#### - N_Queens
+
+
+
+
+
+
+
+최대 공약수(Greatest Common Divisor:GCD)
+- 두 정수의 약수 중에서 가장 큰 공통의 약수(나누어 지는 수)
+- 유클리드 호제법 (GCD 구하기)
+
+최소 공배수 계산
+- 두 정수 A,B 일때 A=GCD*a, B=GCD*b (a,b는 서로소)
+- A*B = (GCD*GCD)* a*b, A*B/GCD = GCD*a*b (최소 공배수)
+
+소수 구하기
+- 2 ~ sqrt(N) 까지 정수로 나누어 보는 방법(에라토스테네스의 체 (Optimized Sieve of Erathosthenes))
+- 기타 방법들 정리 : http://soyoja.com/160
+
+미로 탐색
+- Right hand on wall 오른손을 미로 벽에 대고 움직임
+- 저장된 좌표리스트에서 중복되는 좌표 부분 잘라냄
+
+재귀 호출
+- 피보나치 수열(재귀) : Fn = Fn-1 + Fn-2, F1 = F2 = 1
+- 하노이의 탑
+- Flood Fill : 그래픽에서 색칠하기
+- Fractal Tree : 일정패턴으로 반복으로 나무 모양 그리기
+- 파일 찾기 : 파일을 찾기 시작하는데 서브 폴더 모두 뒤지기
+
+서로소 집합(disjoint-sets)
+
+완전 검색(Brute-force)
+-순열(loop)
+ 서로 다른 n개 중 r 뽑아 나열하는 것(순서가 있음)
+ nPr = n*(n-1)* (n-2)* (n-r+1), 5P2 = 5*4
+ 생성 방법 loop, 재귀
+-부분집합(power set)
+ 집합에 포함된 원소를 선택하는 것
+ 생성 방법 binary counting, 재귀
+ 또 다른 방법
+ 동전 거스름돈 탐색, 전체 탐색
+ 예) knapsack(Brute-force)
+-조합
+ 서로 다른 n개 중 r개를 순서없이 골라 내는 것
+ nCr = n!/((n-r!)* r!), nCr = n-1Cr-1+n-1Cr, nC0 = 1
+ 생성 방법 재귀
+-외판원 문제(TSP)
