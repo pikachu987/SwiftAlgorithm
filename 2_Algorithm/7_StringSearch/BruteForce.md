@@ -24,6 +24,7 @@ func bruteForce(_ text: [Character], pattern: [Character]) {
       print("pattern이 없습니다.")
       return
   }
+  var cnt = 0
   let startDate = Date()
   for i in 0..<text.count-1 { /// 전체 텍스트를 반복
       var j = 0
@@ -39,37 +40,31 @@ func bruteForce(_ text: [Character], pattern: [Character]) {
       /// 텍스트와 패턴이 같을때마다 j가 올라가서 j가 패턴의 글자 길이와 같으면 매칭이 됨
       if j == pattern.count {
           print("\(i)번째~\(i+j-1)번째 글자: \(valueStr)")
+          cnt += 1
       }
   }
   let endDate = Date()
   let timer = endDate.timeIntervalSince1970 - startDate.timeIntervalSince1970
   print("종료")
-  print("총 \(text.count)글자 - 걸린시간: \(timer)초")
+  print("총 \(text.count)글자 - 걸린시간: \(timer)초, 찾은 패턴: \(cnt)")
 }
 
-let text = self.getText()
+let text = getText()
 print(text)
-self.bruteForce(Array(text), pattern: Array("Goodight"))
-
-
+bruteForce(Array(text), pattern: Array("good"))
 ```
 ```swift
-659039번째~659046번째 글자: Goodight
-660910번째~660917번째 글자: Goodight
-756124번째~756131번째 글자: Goodight
-1179039번째~1179046번째 글자: Goodight
-2207343번째~2207350번째 글자: Goodight
-2853726번째~2853733번째 글자: Goodight
-2882829번째~2882836번째 글자: Goodight
-3243709번째~3243716번째 글자: Goodight
-3282353번째~3282360번째 글자: Goodight
-3350139번째~3350146번째 글자: Goodight
-3350192번째~3350199번째 글자: Goodight
-3373008번째~3373015번째 글자: Goodight
-3607344번째~3607351번째 글자: Goodight
-3609590번째~3609597번째 글자: Goodight
-3643929번째~3643936번째 글자: Goodight
-3659086번째~3659093번째 글자: Goodight
+824번째~827번째 글자: good
+15519번째~15522번째 글자: good
+16814번째~16817번째 글자: good
+20841번째~20844번째 글자: good
+24922번째~24925번째 글자: good
+...
+3650846번째~3650849번째 글자: good
+3651852번째~3651855번째 글자: good
+3657369번째~3657372번째 글자: good
+3660938번째~3660941번째 글자: good
+3664802번째~3664805번째 글자: good
 종료
-총 3665494글자 - 걸린시간: 0.269752025604248초
+총 3665494글자 - 걸린시간: 0.587503910064697초, 찾은 패턴: 1014
 ```
