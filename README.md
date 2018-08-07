@@ -227,6 +227,11 @@
 - 시간복잡도는 O(N*M)
 - 비효율적
 
+#### - [라빈-카프 알고리즘(Rabin-Karp)](./2_Algorithm/7_StringSearch/Rabin_Karp.md "Rabin_Karp")
+
+#### - [KMP 알고리즘](./2_Algorithm/7_StringSearch/KMP.md "KMP")
+
+#### - [보이어-무어 알고리즘](./2_Algorithm/7_StringSearch/Boyer_Moore.md "Boyer_Moore")
 
 ### 8)분할 정복(Divide and Conquer)
 
