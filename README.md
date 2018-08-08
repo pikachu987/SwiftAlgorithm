@@ -228,6 +228,10 @@
 - 비효율적
 
 #### - [라빈-카프 알고리즘(Rabin-Karp)](./2_Algorithm/7_StringSearch/Rabin_Karp.md "Rabin_Karp")
+- 스트링을 ascii값과 같은 숫자값으로 바꾼 뒤 hash값을 계산해서 pattern과 매칭한다.
+- hash값과 hash값이 같으면 단순 비교를 한다.
+- H(S[i+1:i+M])은 바로 이전 위치 해시값 H(S[i:i+M-1])을 알면 O(1)에 계산할 수 있는 구조를 띈다.
+- 전처리 시간복잡도는 O(m), 탐색 시간복잡도는 O(mn), 평균적으로 O(m+n)
 
 #### - [KMP 알고리즘](./2_Algorithm/7_StringSearch/KMP.md "KMP")
 
