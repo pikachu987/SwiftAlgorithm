@@ -234,6 +234,10 @@
 - 전처리 시간복잡도는 O(m), 탐색 시간복잡도는 O(mn), 평균적으로 O(m+n)
 
 #### - [KMP 알고리즘](./2_Algorithm/7_StringSearch/KMP.md "KMP")
+- 이전에 비교한 정보를 활용하여 검색하는 방법
+- 이전에 비교했던 정보로 비교할 필요 없는 부분을 건너뛴다.
+- 접두사(prefix) == 접미사(suffix)가 될 수 있는 부분문자중 가장 긴 것의 길이 배열을 구한다.
+- 시간복잡도는 O(n+m)
 
 #### - [보이어-무어 알고리즘](./2_Algorithm/7_StringSearch/Boyer_Moore.md "Boyer_Moore")
 
