@@ -267,7 +267,9 @@
 - 일반적으로 피보나치 수열을 구할때는
 
 > if n == 0 { return 0 }
+
 > else if n == 1 || n == 2 { return 1 }
+
 > fibonacci(n - 1) + fibonacci(n - 2)
 
 - 이런식으로 나타낼 수 있다.
