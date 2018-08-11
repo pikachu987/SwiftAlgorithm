@@ -267,10 +267,8 @@
 - 일반적으로 피보나치 수열을 구할때는
 
 > if n == 0 { return 0 }
-
-> else if n == 1 || n == 2 { return 1 }
-
-> fibonacci(n - 1) + fibonacci(n - 2)
+else if n == 1 || n == 2 { return 1 }
+fibonacci(n - 1) + fibonacci(n - 2)
 
 - 이런식으로 나타낼 수 있다.
 - 이 공식으로 하면 O(n^2) 의 시간복잡도가 걸린다. 45번째 피보나치 수를 구했을때 10초 이상이 나왔다.
