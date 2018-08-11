@@ -279,11 +279,17 @@ fibonacci(n - 1) + fibonacci(n - 2)
 
 ### 9)동적 계획법(Dynamic Programing)
 
-#### - 부분집합(DP)
-#### - 동전 거스름돈
-#### - 피보나치 수열(DP)
-#### - 배낭(Knapsack)(DP)
+- 분할 정복은 문제를 위에서부터 아래로 분할 Top-Down
+- 동적 계획법은 제일 작은 부분부터 상위에 있는 문제로 풀어나감 Bottom-Up
+- 동적 계획법의 동작방식은
+- 1. 문제를 부분 문제로 나눔
+- 2. 가장 작은 부분 문제부터 해를 구한 뒤 테이블에 저장
+- 3. 테이블에 저장되어 있는 부분 문제의 해를 이용하여 점차적으로 상위 부분 문제의 최적해를 구함
 
+#### - [피보나치(Fibonacci)](./2_Algorithm/9_DynamicPrograming/Fibonacci.md "Fibonacci")
+- 0번째는 0, 1번째는 1로 정의되어 있는 테이블에 저장한다.
+- 2번째 부터는 미리 테이블에 저장되어있던 n-1과 n-2로 값을 구한 뒤 테이블에 저장
+- 시간복잡도는 O(n)
 
 ### 10)탐욕 알고리즘(Greedy)
 
@@ -296,14 +302,17 @@ fibonacci(n - 1) + fibonacci(n - 2)
 
 
 
+부분집합(DP)
 
+동전 거스름돈
 
+배낭(Knapsack)(DP)
 
 최대 공약수(Greatest Common Divisor:GCD)
 - 두 정수의 약수 중에서 가장 큰 공통의 약수(나누어 지는 수)
 - 유클리드 호제법 (GCD 구하기)
 
-최소 공배수 계산
+최소 공배수 계산 (LCM)
 - 두 정수 A,B 일때 A=GCD*a, B=GCD*b (a,b는 서로소)
 - A*B = (GCD*GCD)* a*b, A*B/GCD = GCD*a*b (최소 공배수)
 
@@ -316,7 +325,6 @@ fibonacci(n - 1) + fibonacci(n - 2)
 - 저장된 좌표리스트에서 중복되는 좌표 부분 잘라냄
 
 재귀 호출
-- 피보나치 수열(재귀) : Fn = Fn-1 + Fn-2, F1 = F2 = 1
 - 하노이의 탑
 - Flood Fill : 그래픽에서 색칠하기
 - Fractal Tree : 일정패턴으로 반복으로 나무 모양 그리기
