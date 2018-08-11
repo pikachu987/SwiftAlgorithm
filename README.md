@@ -239,7 +239,7 @@
 - 접두사(prefix) == 접미사(suffix)가 될 수 있는 부분문자중 가장 긴 것의 길이 배열을 구한다.
 - 시간복잡도는 O(n+m)
 
-#### - [보이어-무어 알고리즘](./2_Algorithm/7_StringSearch/Boyer_Moore.md "Boyer_Moore")
+#### - [보이어-무어 알고리즘(Boyer-Moore)](./2_Algorithm/7_StringSearch/Boyer_Moore.md "Boyer_Moore")
 - 이동은 왼쪽에서 오른쪽으로 하지만 문자열 비교를 오른쪽에서 왼쪽으로 비교함
 - 대부분의 프로그램이 사용중
 - 오른쪽 끝문자가 패턴에서 발견되지 않으면 패턴의 길이만큼 검색위치를 이동시켜 비교를 제거
@@ -255,6 +255,14 @@
 
 ### 8)분할 정복(Divide and Conquer)
 
+#### - [거듭 제곱(Exponentiation)](./2_Algorithm/8_DivideAndConquer/Exponentiation.md "Exponentiation")
+- 거듭제곱은 자기 자신을 지수의 크기만큼 곱셈을 해야한다.
+- 예를들어 2의 8승은 2*2*2*2*2*2*2*2 이므로 O(n) 의 시간복잡도를 가지고있다.
+- 이것을 분할정복 알고리즘으로 하면 ((2*2) * (2*2)) * ((2*2) * (2*2))로 된다.
+- 지수가 홀수라면 ((2*2) * (2*2)) * ((2*2) * (2*2)) * 2 가 된다.
+- 재귀로 처리를 하면 시간복잡도는 O(logN) 이 된다.
+
+#### - 피보나치
 
 ### 9)동적 계획법(Dynamic Programing)
 
