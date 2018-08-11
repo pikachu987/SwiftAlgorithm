@@ -291,48 +291,59 @@ fibonacci(n - 1) + fibonacci(n - 2)
 - 2번째 부터는 미리 테이블에 저장되어있던 n-1과 n-2로 값을 구한 뒤 테이블에 저장
 - 시간복잡도는 O(n)
 
+#### - [최장 공통 부분(LCS)](./2_Algorithm/9_DynamicPrograming/LCS.md "LCS")
+- 두개의 문자열중 공통으로 존재하는 부분 순서를 말한다.
+- ABCDXYZ, BCDEYZ 두개의 글자중 공통 부분 수열은 BCDYZ 이다.
+- 왼쪽과 제일 위는 다 0으로 넣는다.
+- 왼쪽부터 오른쪽, 위쪽부터 아래쪽까지 반복을 해서
+- 이전값과 비교를한다.
+- 문자열의 길이를 알아내는건 시간복잡도 O(mn) 이다.
+
+
 ### 10)탐욕 알고리즘(Greedy)
 
+#### - 거스름돈 계산
+#### - 크루스칼 최소 신장 트리
+#### - 다익스트라 최단 경로 알고리즘
 #### - 허프만 트리
 
 ### 11)백트래킹(BackTracking)
 
+#### - 미로탈출
 #### - N_Queens
 
+### 12) 기타(ETC)
 
+#### - 부분집합(DP)
 
+#### - 동전 거스름돈
 
-부분집합(DP)
+#### - 배낭(Knapsack)(DP)
 
-동전 거스름돈
-
-배낭(Knapsack)(DP)
-
-최대 공약수(Greatest Common Divisor:GCD)
+#### - 최대 공약수(Greatest Common Divisor:GCD)
 - 두 정수의 약수 중에서 가장 큰 공통의 약수(나누어 지는 수)
 - 유클리드 호제법 (GCD 구하기)
 
-최소 공배수 계산 (LCM)
+#### - 최소 공배수 계산 (LCM)
 - 두 정수 A,B 일때 A=GCD*a, B=GCD*b (a,b는 서로소)
 - A*B = (GCD*GCD)* a*b, A*B/GCD = GCD*a*b (최소 공배수)
 
-소수 구하기
+#### - 소수 구하기
 - 2 ~ sqrt(N) 까지 정수로 나누어 보는 방법(에라토스테네스의 체 (Optimized Sieve of Erathosthenes))
 - 기타 방법들 정리 : http://soyoja.com/160
 
-미로 탐색
+#### - 미로 탐색
 - Right hand on wall 오른손을 미로 벽에 대고 움직임
 - 저장된 좌표리스트에서 중복되는 좌표 부분 잘라냄
 
-재귀 호출
-- 하노이의 탑
-- Flood Fill : 그래픽에서 색칠하기
-- Fractal Tree : 일정패턴으로 반복으로 나무 모양 그리기
-- 파일 찾기 : 파일을 찾기 시작하는데 서브 폴더 모두 뒤지기
+#### - 하노이의 탑 (재귀 호출)
+#### - Flood Fill : 그래픽에서 색칠하기
+#### - Fractal Tree : 일정패턴으로 반복으로 나무 모양 그리기
+#### - 파일 찾기 : 파일을 찾기 시작하는데 서브 폴더 모두 뒤지기
 
-서로소 집합(disjoint-sets)
+#### 서로소 집합(disjoint-sets)
 
-완전 검색(Brute-force)
+#### 완전 검색(Brute-force)
 -순열(loop)
  서로 다른 n개 중 r 뽑아 나열하는 것(순서가 있음)
  nPr = n*(n-1)* (n-2)* (n-r+1), 5P2 = 5*4
