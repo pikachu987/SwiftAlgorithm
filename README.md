@@ -266,8 +266,8 @@
 - 피보나치수열은 0 1 1 2 3 5 8 13 21 34 ..... 이렇게 앞의 두 숫자를 더해서 값이 나온것을 말한다.
 - 일반적으로 피보나치 수열을 구할때는
 
-> if n == 0 { return 0 }
-else if n == 1 || n == 2 { return 1 }
+> if n == 0 { return 0 }<br>
+else if n == 1 || n == 2 { return 1 }<br>
 fibonacci(n - 1) + fibonacci(n - 2)
 
 - 이런식으로 나타낼 수 있다.
