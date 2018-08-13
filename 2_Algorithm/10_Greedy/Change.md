@@ -7,8 +7,41 @@
 ### 거스름돈(Change)
 
 ```swift
-
+let units = [10, 50, 100, 500, 1000, 5000, 10000, 50000]
+func getChange(_ amount: Int) {
+    let units = units.sorted(by: { $0 > $1 })
+    var amount = amount
+    var unitMap = [Int: Int]()
+    for unit in units {
+        let count = countCoins(amount, unit: unit)
+        unitMap.updateValue(count, forKey: unit)
+        amount -= count*unit
+    }
+    unitMap.keys.forEach { unit in
+        if let count = unitMap[unit] {
+            print("\(unit)원짜리 \(count)개")
+        }
+    }
+}
+/// 현재 단위의 동전과 현재 금액을 비교
+func countCoins(_ amount: Int, unit: Int) -> Int {
+    var amount = amount
+    var unitCount = 0
+    while amount >= unit {
+        unitCount += 1
+        amount -= unit
+    }
+    return unitCount
+}
+getChange(2890)
 ```
 ```swift
-
+5000원짜리 0개
+10원짜리 4개
+500원짜리 1개
+10000원짜리 0개
+1000원짜리 2개
+100원짜리 3개
+50000원짜리 0개
+50원짜리 1개
 ```
