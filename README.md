@@ -209,17 +209,6 @@
 
 #### - [너비우선탐색 최단거리(BFS:Breadth First Search)](./2_Algorithm/5_Graph/BFSDistance.md "BFS")
 
-#### - 위상정렬
-
-#### - 최소 신장 트리 - 프림
-
-#### - 최소 신장 트리 - 크루스칼
-
-#### - 최단 경로 탐색 - 다익스트라
-
-#### - 최단 경로 탐색 - 플로이드 워샬
-
-
 ### 7)문자열 검색(String Search)
 
 #### - [전수조사법(BruteForce)](./2_Algorithm/7_StringSearch/BruteForce.md "BruteForce")
@@ -309,14 +298,6 @@ fibonacci(n - 1) + fibonacci(n - 2)
 #### - [거스름돈 계산(Change)](./2_Algorithm/10_Greedy/Change.md "Change")
 - 가장 큰 단위의 동전부터 그 단위가 금액에 비교해 최대가 될수 있는 갯수를 구한다.
 
-#### - 크루스칼 최소 신장 트리
-
-#### - 다익스트라 최단 경로 알고리즘
-
-#### - 프림 최소 신장 트리
-
-#### - 허프만 트리
-
 ### 11)백트래킹(BackTracking)
 
 - 1. 해를 찾아 나가는 과정은 '루트'에서 부터 출발
@@ -344,56 +325,10 @@ fibonacci(n - 1) + fibonacci(n - 2)
 
 ### 12) 기타(ETC)
 
-#### - 정렬 - 이미 정렬되어 있는 경우 필요없는 비교를 수행하지 않고 함수를 종료할수 있게 수정
-
-#### - 정렬 - 병합정렬을 재귀없이
-
-#### - 팩토리얼을 분할정복으로
-
-#### - 백트래킹 스도쿠
-
-#### - 부분집합(DP)
-
-#### - 동전 거스름돈
-
-#### - 배낭(Knapsack)(DP)
-
-#### - 최대 공약수(Greatest Common Divisor:GCD)
+#### - [최대 공약수(Greatest Common Divisor: GCD)](./2_Algorithm/12_ETC/GCD.md "GCD")
+- 유클리드 호제법
 - 두 정수의 약수 중에서 가장 큰 공통의 약수(나누어 지는 수)
-- 유클리드 호제법 (GCD 구하기)
 
-#### - 최소 공배수 계산 (LCM)
+#### - [최소 공배수(Least Common Multiple: LCM)](./2_Algorithm/12_ETC/LCM.md "LCM")
 - 두 정수 A,B 일때 A=GCD*a, B=GCD*b (a,b는 서로소)
 - A*B = (GCD*GCD)* a*b, A*B/GCD = GCD*a*b (최소 공배수)
-
-#### - 소수 구하기
-- 2 ~ sqrt(N) 까지 정수로 나누어 보는 방법(에라토스테네스의 체 (Optimized Sieve of Erathosthenes))
-- 기타 방법들 정리 : http://soyoja.com/160
-
-#### - 미로 탐색
-- Right hand on wall 오른손을 미로 벽에 대고 움직임
-- 저장된 좌표리스트에서 중복되는 좌표 부분 잘라냄
-
-#### - 하노이의 탑 (재귀 호출)
-#### - Flood Fill : 그래픽에서 색칠하기
-#### - Fractal Tree : 일정패턴으로 반복으로 나무 모양 그리기
-#### - 파일 찾기 : 파일을 찾기 시작하는데 서브 폴더 모두 뒤지기
-
-#### 서로소 집합(disjoint-sets)
-
-#### 완전 검색(Brute-force)
--순열(loop)
- 서로 다른 n개 중 r 뽑아 나열하는 것(순서가 있음)
- nPr = n*(n-1)* (n-2)* (n-r+1), 5P2 = 5*4
- 생성 방법 loop, 재귀
--부분집합(power set)
- 집합에 포함된 원소를 선택하는 것
- 생성 방법 binary counting, 재귀
- 또 다른 방법
- 동전 거스름돈 탐색, 전체 탐색
- 예) knapsack(Brute-force)
--조합
- 서로 다른 n개 중 r개를 순서없이 골라 내는 것
- nCr = n!/((n-r!)* r!), nCr = n-1Cr-1+n-1Cr, nC0 = 1
- 생성 방법 재귀
--외판원 문제(TSP)
